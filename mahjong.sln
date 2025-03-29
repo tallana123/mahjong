@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahjong", "mahjong\mahjong.csproj", "{E39E4592-F81A-0349-738C-938694B6EC49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mahjong.Desktop", "mahjong.Desktop\mahjong.Desktop.csproj", "{AE04F087-66B0-0169-D5CE-E204BE28DCEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E39E4592-F81A-0349-738C-938694B6EC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39E4592-F81A-0349-738C-938694B6EC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39E4592-F81A-0349-738C-938694B6EC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39E4592-F81A-0349-738C-938694B6EC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE04F087-66B0-0169-D5CE-E204BE28DCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE04F087-66B0-0169-D5CE-E204BE28DCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE04F087-66B0-0169-D5CE-E204BE28DCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE04F087-66B0-0169-D5CE-E204BE28DCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {232FA8EE-561A-4713-85A9-BE7CDDBBC5F7}
+	EndGlobalSection
+EndGlobal
