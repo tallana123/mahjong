@@ -1,0 +1,150 @@
+﻿{
+  "level": [
+    [
+      [
+        {
+          "type": "Dot",
+          "value": 1
+        },
+        {},
+        {
+          "type": "Dot",
+          "value": 1
+        },
+        {},
+        {
+          "type": "Dot",
+          "value": 2
+        },
+        {
+          "type": "Dot",
+          "value": 2
+        }
+      ],
+      [
+        {
+          "type": "Bamboo",
+          "value": 3
+        },
+        {},
+        {
+          "type": "Bamboo",
+          "value": 3
+        },
+        {
+          "type": "Bamboo",
+          "value": 4
+        },
+        {
+          "type": "Bamboo",
+          "value": 4
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "type": "Symbol",
+          "value": 5
+        },
+        {
+          "type": "Symbol",
+          "value": 5
+        },
+        {
+          "type": "Symbol",
+          "value": 6
+        },
+        {},
+        {},
+        {
+          "type": "Symbol",
+          "value": 6
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "type": "Dragon",
+          "value": "Red"
+        },
+        {
+          "type": "Dragon",
+          "value": "Red"
+        },
+        {
+          "type": "Dragon",
+          "value": "Blue"
+        },
+        {
+          "type": "Dragon",
+          "value": "Blue"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "type": "Flower",
+          "value": "Plum"
+        },
+        {},
+        {
+          "type": "Flower",
+          "value": "Orchid"
+        },
+        {
+          "type": "Flower",
+          "value": "Chrysanthemun"
+        },
+        {
+          "type": "Flower",
+          "value": "Bamboo"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "type": "Season",
+          "value": "Spring"
+        },
+        {
+          "type": "Season",
+          "value": "Summer"
+        },
+        {
+          "type": "Season",
+          "value": "Autumn"
+        },
+        {},
+        {
+          "type": "Season",
+          "value": "Winter"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "type": "Wind",
+          "value": "East"
+        },
+        {
+          "type": "Wind",
+          "value": "East"
+        },
+        {
+          "type": "Wind",
+          "value": "West"
+        },
+        {},
+        {
+          "type": "Wind",
+          "value": "West"
+        }
+      ]
+    ]
+  ]
+}

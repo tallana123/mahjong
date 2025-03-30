@@ -8,5 +8,7 @@
         x:Class="mahjong.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="mahjong">
-        <views:MainView />
+	<Grid>
+		<ContentControl x:Name="MainContent"/>
+	</Grid>
 </Window>
