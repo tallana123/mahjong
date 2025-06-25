@@ -1,150 +1,543 @@
 ﻿{
-  "level": [
-    [
-      [
-        {
-          "type": "Dot",
-          "value": 1
-        },
-        {},
-        {
-          "type": "Dot",
-          "value": 1
-        },
-        {},
-        {
-          "type": "Dot",
-          "value": 2
-        },
-        {
-          "type": "Dot",
-          "value": 2
-        }
-      ],
-      [
-        {
-          "type": "Bamboo",
-          "value": 3
-        },
-        {},
-        {
-          "type": "Bamboo",
-          "value": 3
-        },
-        {
-          "type": "Bamboo",
-          "value": 4
-        },
-        {
-          "type": "Bamboo",
-          "value": 4
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "type": "Symbol",
-          "value": 5
-        },
-        {
-          "type": "Symbol",
-          "value": 5
-        },
-        {
-          "type": "Symbol",
-          "value": 6
-        },
-        {},
-        {},
-        {
-          "type": "Symbol",
-          "value": 6
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "type": "Dragon",
-          "value": "Red"
-        },
-        {
-          "type": "Dragon",
-          "value": "Red"
-        },
-        {
-          "type": "Dragon",
-          "value": "Blue"
-        },
-        {
-          "type": "Dragon",
-          "value": "Blue"
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "type": "Flower",
-          "value": "Plum"
-        },
-        {},
-        {
-          "type": "Flower",
-          "value": "Orchid"
-        },
-        {
-          "type": "Flower",
-          "value": "Chrysanthemun"
-        },
-        {
-          "type": "Flower",
-          "value": "Bamboo"
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "type": "Season",
-          "value": "Spring"
-        },
-        {
-          "type": "Season",
-          "value": "Summer"
-        },
-        {
-          "type": "Season",
-          "value": "Autumn"
-        },
-        {},
-        {
-          "type": "Season",
-          "value": "Winter"
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "type": "Wind",
-          "value": "East"
-        },
-        {
-          "type": "Wind",
-          "value": "East"
-        },
-        {
-          "type": "Wind",
-          "value": "West"
-        },
-        {},
-        {
-          "type": "Wind",
-          "value": "West"
-        }
-      ]
+    "targetScore": 0,
+    "level": [
+        [
+            [
+                {
+                    "type": "Dot",
+                    "value": 1,
+                    "image": "/Assets/Tiles/dot_1.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 2,
+                    "image": "/Assets/Tiles/bamboo_2.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 3,
+                    "image": "/Assets/Tiles/symbol_3.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "East",
+                    "image": "/Assets/Tiles/wind_east.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "West",
+                    "image": "/Assets/Tiles/wind_west.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Green",
+                    "image": "/Assets/Tiles/dragon_green.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 4,
+                    "image": "/Assets/Tiles/symbol_4.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 3,
+                    "image": "/Assets/Tiles/bamboo_3.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 2,
+                    "image": "/Assets/Tiles/dot_2.png"
+                }
+            ],
+            [
+                {
+                    "type": "Symbol",
+                    "value": 5,
+                    "image": "/Assets/Tiles/symbol_5.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Peony",
+                    "image": "/Assets/Tiles/flower_peony.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Spring",
+                    "image": "/Assets/Tiles/season_spring.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 4,
+                    "image": "/Assets/Tiles/dot_4.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 5,
+                    "image": "/Assets/Tiles/bamboo_5.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 6,
+                    "image": "/Assets/Tiles/bamboo_6.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 5,
+                    "image": "/Assets/Tiles/dot_5.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Summer",
+                    "image": "/Assets/Tiles/season_summer.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Orchid",
+                    "image": "/Assets/Tiles/flower_orchid.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 6,
+                    "image": "/Assets/Tiles/symbol_6.png"
+                }
+            ],
+            [
+                {
+                    "type": "Wind",
+                    "value": "South",
+                    "image": "/Assets/Tiles/wind_south.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 7,
+                    "image": "/Assets/Tiles/bamboo_7.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 6,
+                    "image": "/Assets/Tiles/dot_6.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 7,
+                    "image": "/Assets/Tiles/symbol_7.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Green",
+                    "image": "/Assets/Tiles/dragon_green.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 8,
+                    "image": "/Assets/Tiles/symbol_8.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 7,
+                    "image": "/Assets/Tiles/dot_7.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 8,
+                    "image": "/Assets/Tiles/bamboo_8.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "North",
+                    "image": "/Assets/Tiles/wind_north.png"
+                }
+            ],
+            [
+                {
+                    "type": "Symbol",
+                    "value": 9,
+                    "image": "/Assets/Tiles/symbol_9.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 8,
+                    "image": "/Assets/Tiles/dot_8.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 9,
+                    "image": "/Assets/Tiles/bamboo_9.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "North",
+                    "image": "/Assets/Tiles/wind_north.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 9,
+                    "image": "/Assets/Tiles/dot_9.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": "1",
+                    "image": "/Assets/Tiles/symbol_1.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "South",
+                    "image": "/Assets/Tiles/wind_south.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": "1",
+                    "image": "/Assets/Tiles/bamboo_1.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": "1",
+                    "image": "/Assets/Tiles/dot_1.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": "2",
+                    "image": "/Assets/Tiles/symbol_2.png"
+                }
+            ]
+        ],
+        [
+            [
+                {},
+                {
+                    "type": "Bamboo",
+                    "value": 4,
+                    "image": "/Assets/Tiles/bamboo_4.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Lotus",
+                    "image": "/Assets/Tiles/flower_lotus.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Autumn",
+                    "image": "/Assets/Tiles/season_fall.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 2,
+                    "image": "/Assets/Tiles/symbol_2.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 3,
+                    "image": "/Assets/Tiles/symbol_3.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Winter",
+                    "image": "/Assets/Tiles/season_winter.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Chrysanthemum",
+                    "image": "/Assets/Tiles/flower_chrysanthemum.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 5,
+                    "image": "/Assets/Tiles/bamboo_5.png"
+                },
+                {}
+            ],
+            [
+                {},
+                {
+                    "type": "Dot",
+                    "value": 3,
+                    "image": "/Assets/Tiles/dot_3.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 6,
+                    "image": "/Assets/Tiles/bamboo_6.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "West",
+                    "image": "/Assets/Tiles/wind_west.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 2,
+                    "image": "/Assets/Tiles/dot_2.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 3,
+                    "image": "/Assets/Tiles/dot_3.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "East",
+                    "image": "/Assets/Tiles/wind_east.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 7,
+                    "image": "/Assets/Tiles/bamboo_7.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 4,
+                    "image": "/Assets/Tiles/dot_4.png"
+                },
+                {}
+            ],
+            [
+                {},
+                {
+                    "type": "Symbol",
+                    "value": 7,
+                    "image": "/Assets/Tiles/symbol_7.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 8,
+                    "image": "/Assets/Tiles/symbol_8.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 5,
+                    "image": "/Assets/Tiles/dot_5.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 8,
+                    "image": "/Assets/Tiles/bamboo_8.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 9,
+                    "image": "/Assets/Tiles/bamboo_9.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 6,
+                    "image": "/Assets/Tiles/dot_6.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": "9",
+                    "image": "/Assets/Tiles/symbol_9.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": "1",
+                    "image": "/Assets/Tiles/symbol_1.png"
+                },
+                {}
+            ]
+        ],
+        [
+            [
+                {},
+                {},
+                {
+                    "type": "Dot",
+                    "value": 7,
+                    "image": "/Assets/Tiles/dot_7.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": "1",
+                    "image": "/Assets/Tiles/bamboo_1.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Orchid",
+                    "image": "/Assets/Tiles/flower_orchid.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Peony",
+                    "image": "/Assets/Tiles/flower_peony.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": "2",
+                    "image": "/Assets/Tiles/bamboo_2.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 8,
+                    "image": "/Assets/Tiles/dot_8.png"
+                },
+                {},
+                {}
+            ],
+            [
+                {},
+                {},
+                {
+                    "type": "Symbol",
+                    "value": 4,
+                    "image": "/Assets/Tiles/symbol_4.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 9,
+                    "image": "/Assets/Tiles/dot_9.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Spring",
+                    "image": "/Assets/Tiles/season_spring.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Summer",
+                    "image": "/Assets/Tiles/season_summer.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": "1",
+                    "image": "/Assets/Tiles/dot_1.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": 5,
+                    "image": "/Assets/Tiles/symbol_5.png"
+                },
+                {},
+                {}
+            ]
+        ],
+        [
+            [
+                {},
+                {},
+                {},
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "South",
+                    "image": "/Assets/Tiles/wind_south.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "North",
+                    "image": "/Assets/Tiles/wind_north.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Green",
+                    "image": "/Assets/Tiles/dragon_green.png"
+                },
+                {},
+                {},
+                {}
+            ],
+            [
+                {},
+                {},
+                {},
+                {
+                    "type": "Symbol",
+                    "value": "6",
+                    "image": "/Assets/Tiles/symbol_6.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 3,
+                    "image": "/Assets/Tiles/bamboo_3.png"
+                },
+                {
+                    "type": "Flower",
+                    "value": "Chrysanthemum",
+                    "image": "/Assets/Tiles/flower_chrysanthemum.png"
+                },
+                {
+                    "type": "Symbol",
+                    "value": "5",
+                    "image": "/Assets/Tiles/symbol_5.png"
+                },
+                {},
+                {},
+                {}
+            ]
+        ],
+        [
+            [
+                {},
+                {},
+                {},
+                {},
+                {
+                    "type": "Flower",
+                    "value": "Lotus",
+                    "image": "/Assets/Tiles/flower_lotus.png"
+                },
+                {
+                    "type": "Season",
+                    "value": "Autumn",
+                    "image": "/Assets/Tiles/season_fall.png"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            [
+                {},
+                {},
+                {},
+                {},
+                {
+                    "type": "Season",
+                    "value": "Winter",
+                    "image": "/Assets/Tiles/season_winter.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "West",
+                    "image": "/Assets/Tiles/wind_west.png"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            [
+                {},
+                {},
+                {},
+                {},
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Green",
+                    "image": "/Assets/Tiles/dragon_green.png"
+                },
+                {},
+                {},
+                {},
+                {}
+            ]
+        ]
     ]
-  ]
 }

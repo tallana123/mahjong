@@ -13,16 +13,15 @@ namespace mahjong.Models
         public FlowerType? Flower { get; set; }
         public SeasonType? Season { get; set; }
         public WindType? Wind { get; set; }
-
-
-        public Tile(int id, TileType type, int value = 0)
+        public string ImagePath { get; set; }
+        public Tile(int id, TileType type, int value = 0, string imagePath = "") 
         {
             this.Id = id;
             this.Type = type;
             this.Value = value;
+            this.ImagePath = imagePath; 
         }
-
-        public Tile(int id, TileType type, DragonType dragon) : this(id, type)
+        public Tile(int id, TileType type, DragonType dragon, string imagePath = "") : this(id, type, 0, imagePath) 
         {
             if (type == TileType.Dragon)
             {
@@ -30,7 +29,7 @@ namespace mahjong.Models
             }
         }
 
-        public Tile(int id, TileType type, FlowerType flower) : this(id, type)
+        public Tile(int id, TileType type, FlowerType flower, string imagePath = "") : this(id, type, 0, imagePath) 
         {
             if (type == TileType.Flower)
             {
@@ -38,7 +37,7 @@ namespace mahjong.Models
             }
         }
 
-        public Tile(int id, TileType type, SeasonType season) : this(id, type)
+        public Tile(int id, TileType type, SeasonType season, string imagePath = "") : this(id, type, 0, imagePath) 
         {
             if (type == TileType.Season)
             {
@@ -46,7 +45,7 @@ namespace mahjong.Models
             }
         }
 
-        public Tile(int id, TileType type, WindType wind) : this(id, type)
+        public Tile(int id, TileType type, WindType wind, string imagePath = "") : this(id, type, 0, imagePath) 
         {
             if (type == TileType.Wind)
             {
@@ -56,7 +55,7 @@ namespace mahjong.Models
 
         public string tileInfo()
         {
-            return $"Tile: {Type}, Id: {Id}, Value: {Value}, D: {Dragon.ToString()}, F: {Flower.ToString()},S: {Season.ToString()},W: {Wind.ToString()} \n";
+            return $"Tile: {Type}, Id: {Id}, Value: {Value}, D: {Dragon}, F: {Flower}, S: {Season}, W: {Wind}, Img: {ImagePath}\n";
         }
     }
 }

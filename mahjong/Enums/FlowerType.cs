@@ -2,9 +2,9 @@
 {
     public enum FlowerType
     {
-        Plum,
+        Peony,
+        Lotus,
         Orchid,
-        Chrysanthemun,
-        Bamboo
+        Chrysanthemum
     }
 }

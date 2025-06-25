@@ -1,0 +1,53 @@
+{
+    "level": [
+        [
+            [
+                {},
+                {},
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {
+                    "type": "Dragon",
+                    "value": "Red",
+                    "image": "/Assets/Tiles/dragon_red.png"
+                },
+                {},
+                {
+                    "type": "Wind",
+                    "value": "East",
+                    "image": "/Assets/Tiles/wind_east.png"
+                },
+                {
+                    "type": "Wind",
+                    "value": "East",
+                    "image": "/Assets/Tiles/wind_east.png"
+                },
+                {},
+                {
+                    "type": "Dot",
+                    "value": 1,
+                    "image": "/Assets/Tiles/dot_1.png"
+                },
+                {
+                    "type": "Dot",
+                    "value": 1,
+                    "image": "/Assets/Tiles/dot_1.png"
+                },
+                {},
+                {
+                    "type": "Bamboo",
+                    "value": 5,
+                    "image": "/Assets/Tiles/bamboo_5.png"
+                },
+                {
+                    "type": "Bamboo",
+                    "value": 5,
+                    "image": "/Assets/Tiles/bamboo_5.png"
+                }
+            ]
+        ]
+    ]
+}

@@ -1,21 +1,17 @@
 ﻿using mahjong.Enums;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace mahjong.Models
 {
     public class Level
     {
         public int Id { get; set; }
-        public Tile[,,] Map {  get; set; }
-        public Level(int level) {
+        public Tile[,,] Map { get; set; }
+
+        public Level(int level)
+        {
             Id = level;
             Map = loadLevel(level);
         }
@@ -27,7 +23,8 @@ namespace mahjong.Models
             Tile[,,] localMap = new Tile[20, 20, 20];
             int layersCounter = 0;
             int tileIdCounter = 0;
-            foreach (var layers in levelData.GetProperty("level").EnumerateArray()) {
+            foreach (var layers in levelData.GetProperty("level").EnumerateArray())
+            {
                 int rowsCounter = 0;
                 int tilesCounter = 0;
                 foreach (var rows in layers.EnumerateArray())
@@ -35,39 +32,51 @@ namespace mahjong.Models
                     tilesCounter = 0;
                     foreach (var tile in rows.EnumerateArray())
                     {
-                        
+
                         if (!tile.TryGetProperty("type", out JsonElement j))
                         {
                             tilesCounter++;
                             continue;
                         }
+                        string imagePath = tile.TryGetProperty("image", out JsonElement imageElement) ? imageElement.GetString() ?? "" : "";
 
-                        TileType tileType = (TileType) Enum.Parse(typeof(TileType), tile.GetProperty("type").GetString());
-
+                        TileType tileType = (TileType)Enum.Parse(typeof(TileType), tile.GetProperty("type").GetString(), true);
                         if (tileType == TileType.Dot || tileType == TileType.Bamboo || tileType == TileType.Symbol)
                         {
-                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, tile.GetProperty("value").GetInt16());
+                            int tileValue = 0;
+                            var valueProp = tile.GetProperty("value");
+                            if (valueProp.ValueKind == JsonValueKind.Number)
+                            {
+                                tileValue = valueProp.GetInt16();
+                            }
+                            else if (valueProp.ValueKind == JsonValueKind.String)
+                            {
+                                int.TryParse(valueProp.GetString(), out tileValue);
+                            }
+
+                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, tileValue, imagePath);
                         }
-                        if (tileType == TileType.Dragon)
+                        else if (tileType == TileType.Dragon)
                         {
-                            DragonType dragonType = (DragonType)Enum.Parse(typeof(DragonType), tile.GetProperty("value").GetString());
-                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, dragonType);
+                            DragonType dragonType = (DragonType)Enum.Parse(typeof(DragonType), tile.GetProperty("value").GetString(), true);
+                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, dragonType, imagePath);
                         }
-                        if (tileType == TileType.Flower)
+                        else if (tileType == TileType.Flower)
                         {
-                            FlowerType flowerType = (FlowerType)Enum.Parse(typeof(FlowerType), tile.GetProperty("value").GetString());
-                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, flowerType);
+                            FlowerType flowerType = (FlowerType)Enum.Parse(typeof(FlowerType), tile.GetProperty("value").GetString(), true);
+                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, flowerType, imagePath);
                         }
-                        if (tileType == TileType.Season)
+                        else if (tileType == TileType.Season)
                         {
-                            SeasonType seasonType = (SeasonType)Enum.Parse(typeof(SeasonType), tile.GetProperty("value").GetString());
-                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, seasonType);
+                            SeasonType seasonType = (SeasonType)Enum.Parse(typeof(SeasonType), tile.GetProperty("value").GetString(), true);
+                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, seasonType, imagePath);
                         }
-                        if (tileType == TileType.Wind)
+                        else if (tileType == TileType.Wind)
                         {
-                            WindType windType = (WindType)Enum.Parse(typeof(WindType), tile.GetProperty("value").GetString());
-                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, windType);
+                            WindType windType = (WindType)Enum.Parse(typeof(WindType), tile.GetProperty("value").GetString(), true);
+                            localMap[layersCounter, rowsCounter, tilesCounter] = new(tileIdCounter, tileType, windType, imagePath);
                         }
+
                         tileIdCounter++;
                         tilesCounter++;
                     }

@@ -1,10 +1,8 @@
 ﻿namespace mahjong.Enums
 {
-    public enum WindType
+    public enum DragonType
     {
-        East,
-        South,
-        West,
-        North
+        Red,
+        Green
     }
 }
